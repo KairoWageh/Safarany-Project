@@ -1,0 +1,53 @@
+<!--
+  Generated template for the AddTripPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Add Trip</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-input placeholder="Trip Name"></ion-input>
+        </ion-item>
+       
+        <ion-item>
+          <ion-label>Trip Date</ion-label>
+          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Trip Time</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Notes"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Pharaonic places</ion-label>
+            <ion-checkbox ></ion-checkbox>
+          </ion-item>
+          <ion-item>
+              <ion-label>Restaurants</ion-label>
+              <ion-checkbox checked="true"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+              <ion-label>Clubs</ion-label>
+              <ion-checkbox ></ion-checkbox>
+          </ion-item>
+        
+      </ion-list> 
+      <p class="center">
+          <button ion-button round (click)="addTrip()">Add</button>
+        </p>   
+
+</ion-content>

@@ -7,13 +7,20 @@ import { PlacesToVisitPage } from '../places-to-visit/places-to-visit';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  budget: string = "1000";
 
   constructor(public navCtrl: NavController) {
 
   }
-
+ 
+ 
   placesToVisit(){
-  	this.navCtrl.push(PlacesToVisitPage);
+    this.navCtrl.push(PlacesToVisitPage);
   }
+  //search function
+  getItems(){
+    console.log("search.....");
+  }
+ 
 
 }

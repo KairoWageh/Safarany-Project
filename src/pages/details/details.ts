@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListPage } from '../list/list';
 
 /**
- * Generated class for the PlacesToVisitPage page.
+ * Generated class for the DetailsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { ListPage } from '../list/list';
 
 @IonicPage()
 @Component({
-  selector: 'page-places-to-visit',
-  templateUrl: 'places-to-visit.html',
+  selector: 'page-details',
+  templateUrl: 'details.html',
 })
-export class PlacesToVisitPage {
+export class DetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PlacesToVisitPage');
-  }
-  AddplacesToVisit(){
-    console.log("AddplacesToVisit");
-    this.navCtrl.setRoot(ListPage);
+    console.log('ionViewDidLoad DetailsPage');
   }
 
 }

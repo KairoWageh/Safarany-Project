@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListPage } from '../list/list';
 
 /**
- * Generated class for the PlacesToVisitPage page.
+ * Generated class for the AddTripPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +11,25 @@ import { ListPage } from '../list/list';
 
 @IonicPage()
 @Component({
-  selector: 'page-places-to-visit',
-  templateUrl: 'places-to-visit.html',
+  selector: 'page-add-trip',
+  templateUrl: 'add-trip.html',
 })
-export class PlacesToVisitPage {
+export class AddTripPage {
+
+  public event = {
+    month: '2018-02-19',
+    timeStarts: '07:43',
+    timeEnds: '1990-02-20'
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PlacesToVisitPage');
+    console.log('ionViewDidLoad AddTripPage');
   }
-  AddplacesToVisit(){
-    console.log("AddplacesToVisit");
+  addTrip(){
+    console.log("add trip");
     this.navCtrl.setRoot(ListPage);
   }
-
 }

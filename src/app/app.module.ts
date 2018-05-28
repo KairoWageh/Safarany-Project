@@ -5,7 +5,13 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TripsPage } from '../pages/trips/trips';
+import { DetailsPage } from '../pages/details/details';
+import { ShowTripsPage } from '../pages/show-trips/show-trips';
 import { PlacesToVisitPage } from '../pages/places-to-visit/places-to-visit';
+import { ListPage } from '../pages/list/list';
+import { DictionaryPage } from '../pages/dictionary/dictionary';
+import { MapPage } from '../pages/map/map';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +21,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     TripsPage,
-    PlacesToVisitPage
+    DetailsPage,
+    ShowTripsPage,
+    PlacesToVisitPage,
+    ListPage,
+    DictionaryPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +37,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     TripsPage,
-    PlacesToVisitPage
+    DetailsPage,
+    ShowTripsPage,
+    PlacesToVisitPage,
+    ListPage,
+    DictionaryPage,
+    MapPage
   ],
   providers: [
     StatusBar,
